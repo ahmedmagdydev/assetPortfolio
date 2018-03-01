@@ -1,0 +1,3 @@
+.ui.table th .image, .ui.table th .image img, .ui.table td .image, .ui.table td .image img{
+	max-width: -webkit-fill-available !important;
+}
