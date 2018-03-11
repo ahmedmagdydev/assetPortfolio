@@ -4,7 +4,9 @@ import { Meteor } from 'meteor/meteor';
 import 'semantic-ui-css/semantic.css';
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import NavBar from '../components/NavBar';
+import SiteHeader from '../components/siteHeader';
 import Footer from '../components/Footer';
+import SiteFooter from '../components/siteFooter';
 import Landing from '../pages/Landing';
 import ListStuff from '../pages/ListStuff';
 import ListProject from '../pages/ListProject';
@@ -60,8 +62,9 @@ class App extends React.Component {
 const SiteLayout = ({children, ...rest}) => {
   return (
     <div className="page page-login">
+    <SiteHeader/>
       <div className="main">{children}</div>
-      <Footer/>
+      <SiteFooter/>
     </div>
         
 
