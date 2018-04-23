@@ -5,17 +5,29 @@ import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, NavLink } from 'react-router-dom';
 import { Menu, Dropdown, Header } from 'semantic-ui-react';
 import {Grid, Row, Col} from 'react-bootstrap';
+import styled from 'styled-components'
+
 import './bootstrap.min.css';
+import Carousel from './headSlider'
+
+
+const Item = styled.div`
+  color: white;
+  height: 300px;
+`
+const MainHead = styled.div`
+  background: url("/images/header.png") no-repeat;
+  height:840px;
+  backgroundSize: 100%;
+  padding:35px 0 ;
+`
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class SiteHeader extends React.Component {
   render() {
-    const headerStyle = { background: 'url("/images/header.png") no-repeat',
-                          height:840,
-                          backgroundSize: '100%',
-                          padding:'35px 0' };
+
     return (
-      <div className="header" style={headerStyle}>
+      <MainHead className="header" >
         <Grid>
           <Row>
             <Col md={3}>
@@ -44,9 +56,30 @@ class SiteHeader extends React.Component {
               </ul>
             </Col>
           </Row>
-          
+          <Row>
+            <Col md={6}>
+              <Carousel title="Carousel">
+                <Item>
+                  <h2>Website Designs</h2>
+                  <p>We are greatly thrilled to announce another achievement to be added to our legacy of excellence.</p>
+                  <p>We are greatly thrilled to announce another achievement to be added to our legacy of excellence.</p>
+                </Item>
+                <Item>
+                  <h2>Website Designs</h2>
+                  <p>We are greatly thrilled to announce another achievement to be added to our legacy of excellence.</p>
+                  <p>We are greatly thrilled to announce another achievement to be added to our legacy of excellence.</p>
+                </Item>
+                <Item>
+                  <h2>Website Designs</h2>
+                  <p>We are greatly thrilled to announce another achievement to be added to our legacy of excellence.</p>
+                  <p>We are greatly thrilled to announce another achievement to be added to our legacy of excellence.</p>
+                </Item>
+              </Carousel>
+            </Col>
+          </Row>
         </Grid>
-      </div>
+
+      </MainHead>
       
     );
   }

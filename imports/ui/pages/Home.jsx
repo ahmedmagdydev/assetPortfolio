@@ -1,15 +1,17 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Header } from 'semantic-ui-react';
+
+
+
 
 /** After the user clicks the "Signout" link in the NavBar, log them out and display this page. */
 export default class Home extends React.Component {
   render() {
     
     return (
-      <Header as="h2" textAlign="center">
-        <p>this is the home of asset's portfolio</p>
-      </Header>
+    	<div>
+    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloribus a architecto, ad, iste laboriosam eum veniam tempora mollitia ipsa nostrum impedit dolorum enim dicta quaerat voluptatem ratione saepe. Asperiores.</p>
+    	</div>
     );
   }
 }
