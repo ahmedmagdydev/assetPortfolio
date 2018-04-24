@@ -46,6 +46,8 @@ background: ${(props) => (props.isCurrent) ? '#48ff99' : 'transparent'};
 const Big = styled.span`
   font-size:2.3rem;
 `
+const divStyle = {
+  height: '27px'};
 class Indicator extends Component {
   render() {
     const { length, position } = this.props
@@ -53,7 +55,7 @@ class Indicator extends Component {
       <Container>
         {
           Array.from({ length }, (pip, i) => 
-            (<div key={ i }>
+            (<div key={ i } style={divStyle}>
               <Pip
                 index={i}
                 isCurrent={ i === position }
