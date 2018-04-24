@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
 
+import Solutions from '../components/solutions';
 
 
 
@@ -10,7 +11,7 @@ export default class Home extends React.Component {
     
     return (
     	<div>
-    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloribus a architecto, ad, iste laboriosam eum veniam tempora mollitia ipsa nostrum impedit dolorum enim dicta quaerat voluptatem ratione saepe. Asperiores.</p>
+    		<Solutions/>
     	</div>
     );
   }

@@ -18,10 +18,16 @@ const Item = styled.div`
 const MainHead = styled.div`
   background: url("/images/header.png") no-repeat;
   height:840px;
-  backgroundSize: 100%;
+  background-size: 100%;
   padding:35px 0 ;
 `
-
+const LargeText = styled.div`
+font-size:70px;
+    font-weight: lighter;
+    background:url(images/large-text.png) no-repeat bottom left -9px;
+    padding-bottom:40px;
+    margin-bottom:12px;
+`
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class SiteHeader extends React.Component {
   render() {
@@ -60,17 +66,17 @@ class SiteHeader extends React.Component {
             <Col md={6}>
               <Carousel title="Carousel">
                 <Item>
-                  <h2>Website Designs</h2>
+                  <LargeText><b>Website</b> Designs</LargeText> 
                   <p>We are greatly thrilled to announce another achievement to be added to our legacy of excellence.</p>
                   <p>We are greatly thrilled to announce another achievement to be added to our legacy of excellence.</p>
                 </Item>
                 <Item>
-                  <h2>Website Designs</h2>
+                  <LargeText><b>Website</b> Designs</LargeText> 
                   <p>We are greatly thrilled to announce another achievement to be added to our legacy of excellence.</p>
                   <p>We are greatly thrilled to announce another achievement to be added to our legacy of excellence.</p>
                 </Item>
                 <Item>
-                  <h2>Website Designs</h2>
+                  <LargeText><b>Website</b> Designs</LargeText> 
                   <p>We are greatly thrilled to announce another achievement to be added to our legacy of excellence.</p>
                   <p>We are greatly thrilled to announce another achievement to be added to our legacy of excellence.</p>
                 </Item>
